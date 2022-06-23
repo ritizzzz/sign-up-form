@@ -63,6 +63,7 @@ body{
     background: url(assets/background.jpg);
     background-size: cover;
     color: white;
+	text-align: center;
 }
 
 main{
@@ -122,6 +123,7 @@ button{
 
 .shared{
 	font-size: max(calc(0.5rem + 1vw), 22px);
+	font-weight: bold;
 }
 
 label{
@@ -130,7 +132,6 @@ label{
 form>p:nth-child(even){
 	margin-top: 5px;
 }
-
 form>p, .formbody{
 	padding-left: 20px;
 }
@@ -142,8 +143,12 @@ button{
 .formbody{
 	box-shadow: 0px 3px 3px -3px black,
 				0px -3px 3px -3px #d4ddee;
+	padding-top: 20px;
 }
 
+#start{
+	margin-bottom: 20px;
+}
 .col{
 	display: flex;
 	flex-direction: column;
@@ -152,8 +157,10 @@ button{
   
 .row{
 	display: flex;
-
 }
 
+em{
+	font-style: italic;
+}
 
 
