@@ -30,43 +30,42 @@
                 
             <form action="#" method="post">
                 <p class="shared">Lets do this!!</p>
-                <div class="formbody">
-
-                        <div class="row">
+                    <div class="formbody">
+                            <div class="row">
+                                    <div class="col">
+                                        <label for="firstname">FIRST NAME</label>
+                                        <input type="text" id="firstname" name="firstname" required>
+                                    </div>
+                    
+                                    <div class="col">
+                                        <label for="lastname">LAST NAME</label>
+                                        <input type="text" id="lastname" name="lastname" required>
+                                    </div>
+                            </div>
+                    
+                            <div class="row">
                                 <div class="col">
-                                    <label for="firstname">FIRST NAME</label>
-                                    <input type="text" id="firstname" name="firstname">
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="col">
+                                    <label for="phonenumber">PHONE NUMBER</label>
+                                    <input type="number" id="phonenumber" name="phonenumber" required>
                                 </div>
                     
+                            </div>
+                            <div class="row">
                                 <div class="col">
-                                    <label for="lastname">LAST NAME</label>
-                                    <input type="text" id="lastname" name="lastname">
+                                    <label for="password">PASSWORD</label>
+                                    <input type="password" id="password" name="password" required>
                                 </div>
-                        </div>
+                                <div class="col">
+                                    <label for="confirmpassword">CONFIRM PASSWORD</label>
+                                    <input type="password" id="confirmpassword" name="confirmpassword" required>
+                                </div>
+                            </div>
+                    </div>
                     
-                        <div class="row">
-                            <div class="col">
-                                <label for="email">EMAIL</label>
-                                <input type="email" id="email" name="email">
-                            </div>
-                            <div class="col">
-                                <label for="phonenumber">PHONE NUMBER</label>
-                                <input type="number" id="phonenumber" name="phonenumber">
-                            </div>
-                    
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <label for="password">PASSWORD</label>
-                                <input type="password" id="password" name="password">
-                            </div>
-                            <div class="col">
-                                <label for="confirmpassword">CONFIRM PASSWORD</label>
-                                <input type="password" id="confirmpassword" name="confirmpassword">
-                            </div>
-                        </div>
-                </div>
-                
                 <button type="submit">Create Account</button>
                 <p>Already have an account? <a href="#">Log in</a></p>
             </form>

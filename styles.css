@@ -45,6 +45,8 @@ table {
 	border-spacing: 0;
 }
 
+
+/* file css */
 body{
     width: 100vw;
     height: 100vh;
@@ -66,24 +68,31 @@ body{
 main{
     flex: 2;
     height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	
 }
-
+:root{
+	font-size: 20px;
+}
 /* form-styling */
 /* remove all system level styling */
 input {
 	-webkit-appearance: none;
 	appearance: none;
+	border: 1px solid #E5E7EB;
 	width: 300px;
+	padding: 10px;
+	border-radius: 5px;
 	margin-bottom: 30px;
 	margin-right: 30px;
   }
 
+input:focus{
+	outline: none;
+	border: 1px solid rgb(86, 203, 241);
+	box-shadow: 3px 3px 3px -3px black;
+}
+
 form{
-	width: calc(100%-20px);
+
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -105,13 +114,16 @@ button{
 	gap: 30px;
 	padding-left: 20px;
 	width: 80%;
+	margin-top: 10vh;
 }
 
 .shared{
-	font-size: calc(1rem + 1vw);
+	font-size: max(calc(0.5rem + 1vw), 22px);
 }
 
-
+label{
+	font-size:  max(calc(0.1rem + 0.5vw), 14px);
+}
 form>p{
 	margin-top: 5px;
 }
@@ -121,12 +133,10 @@ form>p{
 	
   }
   
-  .row{
+.row{
 	display: flex;
-	flex-wrap: wrap;
-	
-  }
-  
-  
+
+}
+
 
 
