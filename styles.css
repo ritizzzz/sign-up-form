@@ -65,4 +65,37 @@ body{
 main{
     flex: 2;
     height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
 }
+
+/* form-styling */
+/* remove all system level styling */
+input {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 300px;
+	margin-bottom: 5px;
+	margin-right: 10px;
+  }
+
+form{
+	width: 100%;
+}
+
+.col{
+	display: flex;
+	flex-direction: column;
+	
+  }
+  
+  .row{
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  
+
+
