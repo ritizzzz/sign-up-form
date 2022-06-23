@@ -45,6 +45,11 @@ table {
 	border-spacing: 0;
 }
 
+/* font for logo */
+@font-face {
+	font-family: logofont;
+	src: url(assets/Norse-Bold.otf);
+  }
 
 /* file css */
 body{
@@ -64,6 +69,40 @@ body{
     background-size: cover;
     color: white;
 	text-align: center;
+	position: relative;
+}
+
+.footercontain{
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+}
+
+a{
+	color: white;	
+}
+
+.logo-text{
+	font-family: logofont, sans-serif;
+	font-size: 96px;
+}
+.logo-contain{
+	width: 100%;
+	background-color: black;
+	opacity: 0.7;
+	margin-top: 16vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0px;
+}
+
+.logo{
+	width: 100px;
+	height: 150px;
+	background-image: url(assets/odin-lined.png);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 main{
@@ -122,7 +161,7 @@ button{
 }
 
 .shared{
-	font-size: max(calc(0.5rem + 1vw), 22px);
+	font-size: max(calc(0.4rem + 1vw), 22px);
 	font-weight: bold;
 }
 
