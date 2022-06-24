@@ -1,19 +1,85 @@
-
-
 /* CSS reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -21,25 +87,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -49,52 +134,52 @@ table {
 @font-face {
 	font-family: logofont;
 	src: url(assets/Norse-Bold.otf);
-  }
+}
 
 /* file css,for entire page*/
-body{
-    width: 100vw;
-    height: 100vh;
+body {
+	width: 100%;
+	height: 100%;
 }
 
 
-.container{
-    display: flex;
+.container {
+	display: flex;
 }
 
 
-:root{
+:root {
 	font-size: 20px;
 }
 
 /* left */
-.left{
-    flex: 1;
-    height: 100vh;
-    background: url(assets/background.jpg);
-    background-size: cover;
-    color: white;
+.left {
+	flex: 1;
+	height: 100vh;
+	background: url(assets/background.jpg);
+	background-size: cover;
+	color: white;
 	text-align: center;
 	position: relative;
 }
 
-.footercontain{
+.footercontain {
 	position: absolute;
 	bottom: 10px;
 	width: 100%;
 }
 
-a{
-	color: white;	
+a {
+	color: white;
 }
 
 
-.logo-text{
+.logo-text {
 	font-family: logofont, sans-serif;
 	font-size: 96px;
 }
 
-.logo-contain{
+.logo-contain {
 	width: 100%;
 	background-color: black;
 	opacity: 0.7;
@@ -105,24 +190,25 @@ a{
 	padding: 10px 0px;
 }
 
-.logo{
+.logo {
 	width: 100px;
 	height: 140px;
 	background-image: url(assets/odin-lined.png);
 	background-size: contain;
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
 }
 
 
 /* right  */
-main{
-    flex: 2;
-    height: 100vh;
+main {
+	flex: 2;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	gap: 80px;
 }
-.topright{
+
+.topright {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
@@ -143,36 +229,36 @@ input {
 	border-radius: 5px;
 	margin-bottom: 30px;
 	margin-right: 30px;
-  }
+}
 
-input:focus{
+input:focus {
 	outline: none;
 	border: 1px solid rgb(86, 203, 241);
 	box-shadow: 3px 3px 3px -3px black;
 }
 
-#password{
+#password {
 	margin-bottom: 0px;
 }
 
-.error{
+.error {
 	display: none;
 	font-size: 16px;
 }
 
 
-.erron{
+.erron {
 	display: block;
 	color: red;
 }
 
-form{
+form {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 }
 
-button{
+button {
 	width: 200px;
 	color: white;
 	background-color: green;
@@ -180,57 +266,100 @@ button{
 	border: none;
 	border-radius: 10px;
 }
-button:disabled{
+
+button:disabled {
 	background-color: rgba(0, 128, 0, 0.7);
 }
 
-button:disabled:hover{
+button:disabled:hover {
 	cursor: not-allowed;
-	
+
 }
-button:hover{
+
+button:hover {
 	cursor: pointer;
 }
-.shared{
+
+.shared {
 	font-size: max(calc(0.4rem + 1vw), 22px);
 	font-weight: bold;
 }
-label{
-	font-size:  max(calc(0.3rem + 0.5vw), 16px);
+
+label {
+	font-size: max(calc(0.3rem + 0.5vw), 16px);
 }
 
-form>p:nth-child(even){
+form>p:nth-child(even) {
 	margin-top: 5px;
 }
-form>p, .formbody{
+
+form>p,
+.formbody {
 	padding-left: 20px;
 }
 
-button{
+button {
 	margin-left: 20px;
 }
 
-.formbody{
+.formbody {
 	box-shadow: 0px 3px 3px -3px black,
-				0px -3px 3px -3px #d4ddee;
+		0px -3px 3px -3px #d4ddee;
 	padding-top: 20px;
 }
 
-#start{
+#start {
 	margin-bottom: 20px;
 }
-.col{
+
+.col {
 	display: flex;
 	flex-direction: column;
-	
-  }
-  
-.row{
+
+}
+
+.row {
 	display: flex;
 }
 
-em{
+em {
 	font-style: italic;
 }
 
+#login{
+	color: blue;
+}
 
+
+/* responsive */
+@media screen and (max-width: 1100px), screen and (max-height: 740px){
+
+	.container {
+		flex-direction: column;
+
+	}
+	.left{
+		background-image: url(assets/backgroundrotated.jpg);
+		background-size: cover;
+		flex-basis: 400px;
+	}
+
+	.logo-contain{
+		margin-top: 50px;
+	}
+
+	.topright{
+		margin-top: 10vh
+	}
+	.row{
+		flex-wrap: wrap;
+	}
+	
+	label[for='confirmpassword']{
+		margin-top: 30px;
+	}
+
+	main{
+		gap: 40px;
+	}
+}
