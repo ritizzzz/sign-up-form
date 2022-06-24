@@ -51,7 +51,7 @@ table {
 	src: url(assets/Norse-Bold.otf);
   }
 
-/* file css */
+/* file css,for entire page*/
 body{
     width: 100vw;
     height: 100vh;
@@ -62,6 +62,12 @@ body{
     display: flex;
 }
 
+
+:root{
+	font-size: 20px;
+}
+
+/* left */
 .left{
     flex: 1;
     height: 100vh;
@@ -82,10 +88,12 @@ a{
 	color: white;	
 }
 
+
 .logo-text{
 	font-family: logofont, sans-serif;
 	font-size: 96px;
 }
+
 .logo-contain{
 	width: 100%;
 	background-color: black;
@@ -99,12 +107,14 @@ a{
 
 .logo{
 	width: 100px;
-	height: 150px;
+	height: 140px;
 	background-image: url(assets/odin-lined.png);
 	background-size: contain;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;	
 }
 
+
+/* right  */
 main{
     flex: 2;
     height: 100vh;
@@ -112,9 +122,16 @@ main{
 	flex-direction: column;
 	gap: 80px;
 }
-:root{
-	font-size: 20px;
+.topright{
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding-left: 20px;
+	width: 80%;
+	margin-top: 15vh;
 }
+
+
 /* form-styling */
 /* remove all system level styling */
 input {
@@ -134,12 +151,23 @@ input:focus{
 	box-shadow: 3px 3px 3px -3px black;
 }
 
-form{
+#password{
+	margin-bottom: 0px;
+}
 
+.error{
+	display: none;
+}
+
+.erron{
+	display: block;
+	color: red;
+}
+
+form{
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-
 }
 
 button{
@@ -150,16 +178,16 @@ button{
 	border: none;
 	border-radius: 10px;
 }
-
-.topright{
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
-	padding-left: 20px;
-	width: 80%;
-	margin-top: 15vh;
+button:disabled{
+	background-color: rgba(0, 128, 0, 0.7);
 }
 
+button:disabled:hover{
+	cursor: ;
+}
+button:hover{
+	cursor: pointer;
+}
 .shared{
 	font-size: max(calc(0.4rem + 1vw), 22px);
 	font-weight: bold;
