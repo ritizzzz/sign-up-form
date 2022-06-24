@@ -157,7 +157,9 @@ input:focus{
 
 .error{
 	display: none;
+	font-size: 16px;
 }
+
 
 .erron{
 	display: block;
@@ -183,7 +185,8 @@ button:disabled{
 }
 
 button:disabled:hover{
-	cursor: ;
+	cursor: not-allowed;
+	
 }
 button:hover{
 	cursor: pointer;
@@ -192,10 +195,10 @@ button:hover{
 	font-size: max(calc(0.4rem + 1vw), 22px);
 	font-weight: bold;
 }
-
 label{
-	font-size:  max(calc(0.1rem + 0.5vw), 14px);
+	font-size:  max(calc(0.3rem + 0.5vw), 16px);
 }
+
 form>p:nth-child(even){
 	margin-top: 5px;
 }
