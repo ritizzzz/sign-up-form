@@ -242,13 +242,13 @@ input:focus {
 }
 
 .error {
-	display: none;
+	visibility:hidden;
 	font-size: 16px;
 }
 
 
 .erron {
-	display: block;
+	visibility: visible;
 	color: red;
 }
 
@@ -361,5 +361,11 @@ em {
 
 	main{
 		gap: 40px;
+	}
+}
+@media screen and (min-width: 700px){
+
+	label[for='confirmpassword']{
+		margin-top: 0px;
 	}
 }
