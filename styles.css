@@ -242,13 +242,13 @@ input:focus {
 }
 
 .error {
-	visibility:hidden;
+	display: none;
 	font-size: 16px;
 }
 
 
 .erron {
-	visibility: visible;
+	display: block;
 	color: red;
 }
 
@@ -355,17 +355,16 @@ em {
 		flex-wrap: wrap;
 	}
 	
-	label[for='confirmpassword']{
-		margin-top: 30px;
-	}
 
 	main{
 		gap: 40px;
 	}
 }
-@media screen and (min-width: 700px){
+
+/* flex wraps at 738px */
+@media screen and (max-width: 738px){
 
 	label[for='confirmpassword']{
-		margin-top: 0px;
+		margin-top: 30px;
 	}
 }
